@@ -27,40 +27,34 @@ class ConfigTab(object):
         label_domain = Label('Domain (micron):')
         stepsize = 10
         disable_domain = False
-        self.xmin = BoundedFloatText(step=stepsize,
+        self.xmin = FloatText(step=stepsize,
             # description='$X_{min}$',
-            min = -5000,
             description='Xmin',
             disabled = disable_domain,
             layout=Layout(width=constWidth),
         )
-        self.ymin = BoundedFloatText(step=stepsize,
+        self.ymin = FloatText(step=stepsize,
             description='Ymin',
-            min = -5000,
             disabled = disable_domain,
             layout=Layout(width=constWidth),
         )
-        self.zmin = BoundedFloatText(step=stepsize,
+        self.zmin = FloatText(step=stepsize,
             description='Zmin',
-            min = -5000,
             disabled = disable_domain,
             layout=Layout(width=constWidth),
         )
-        self.xmax = BoundedFloatText(step=stepsize,
+        self.xmax = FloatText(step=stepsize,
             description='Xmax',
-            max = 5000,
             disabled = disable_domain,
             layout=Layout(width=constWidth),
         )
-        self.ymax = BoundedFloatText(step=stepsize,
+        self.ymax = FloatText(step=stepsize,
             description='Ymax',
-            max = 5000,
             disabled = disable_domain,
             layout=Layout(width=constWidth),
         )
-        self.zmax = BoundedFloatText(step=stepsize,
+        self.zmax = FloatText(step=stepsize,
             description='Zmax',
-            max = 5000,
             disabled = disable_domain,
             layout=Layout(width=constWidth),
         )
